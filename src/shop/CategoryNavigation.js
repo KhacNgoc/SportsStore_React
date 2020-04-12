@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-route-dom";
+import { Link } from "react-router-dom";
 export class CategoryNavigation extends Component {
     render() {
         return <React.Fragment>
