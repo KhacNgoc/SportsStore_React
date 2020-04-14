@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 export class CategoryNavigation extends Component {
     render() {
         return <React.Fragment>
-            <Link className="btn btn-secondary btn-block" to={ this.props.baseUrl }>All</Link>
+            <Link className="btn btn-primary w-100 mb-3" to={ this.props.baseUrl }>All</Link><br/>
             { this.props.categories && this.props.categories.map(cat => 
-            <Link className="btn btn-secondary btn-lock" key={ cat } to={ `${ this.props.baseUrl }/${ cat.toLowerCase() }` }>{ cat }</Link>
+            <div>
+            <Link className="btn btn-primary w-100 mb-3" key={ cat } to={ `${ this.props.baseUrl }/${ cat.toLowerCase() }` }>{ cat }</Link>
+            </div>
             ) }
         </React.Fragment>
     }
